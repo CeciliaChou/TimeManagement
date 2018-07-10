@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="@string/entry_label"
+        android:title="@string/entry_label"/>
+
+    <ListPreference
+        android:key="@string/type"
+        android:title="@string/type"
+        android:entries="@array/event_types"
+        android:entryValues="@array/event_types"/>
+
+    <PreferenceCategory
+        android:key="@string/practice"
+        android:title="@string/entry_interval">
+        <org.zx_xjr.timemanagement.DatePickerPreference
+            android:key="@string/first_practice_date"
+            android:title="@string/first_practice_date"
+            android:persistent="true"
+            android:dialogTitle=""/>
+        <EditTextPreference
+            android:key="@string/entry_interval_value"
+            android:title="@string/entry_interval_value"
+            android:inputType="number"/>
+        <ListPreference
+            android:key="@string/entry_interval_unit"
+            android:title="@string/entry_interval_unit"
+            android:entries="@array/interval_units"
+            android:entryValues="@array/interval_units"/>
+        <org.zx_xjr.timemanagement.MarkPreference
+            android:key="@string/mark_history"
+            android:title="@string/mark_history"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/task"
+        android:title="@string/task">
+        <org.zx_xjr.timemanagement.DatePickerPreference
+            android:key="@string/start_date"
+            android:title="@string/start_date"
+            android:persistent="true"
+            android:dialogTitle=""/>
+        <org.zx_xjr.timemanagement.DatePickerPreference
+            android:key="@string/expire_date"
+            android:title="@string/expire_date"
+            android:persistent="true"
+            android:dialogTitle=""/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">TimeManagement</string>
+
+    <string name="tab_event">Events</string>
+    <string name="tab_reminder">Reminders</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save_prompt">Save the entry?</string>
+    <string name="save">Save</string>
+    <string name="delete_prompt">Sure to delete?</string>
+    <string name="delete">Delete</string>
+
+    <string name="reminder_time">Time</string>
+    <string name="entry_label">Label</string>
+    <string name="entry_interval">Interval</string>
+    <string name="entry_interval_value">Value</string>
+    <string name="entry_interval_unit">Unit</string>
+    <string name="default_reminder_label">Reminder</string>
+
+    <string-array name="interval_units">
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+    </string-array>
+
+    <string-array name="event_types">
+        <item>Normal</item>
+        <item>Practice</item>
+        <item>Task</item>
+    </string-array>
+    <string name="type">Type</string>
+    <string name="practice">Practice</string>
+    <string name="task">Task</string>
+    <string name="start_date">Start Date</string>
+    <string name="expire_date_with_colon">Due Date:&#032;</string>
+    <string name="default_event_label">Event</string>
+    <string name="days_left">Days left:&#032;</string>
+    <string name="separator" translatable="false">&#032;|&#032;</string>
+    <string name="days">day(s)</string>
+    <string name="expired">Expired</string>
+    <string name="due_today">Due today</string>
+    <string name="expire_date">Due Date</string>
+    <string name="bind_events">Bind Events</string>
+    <string name="next_reminder_date">Next Reminder Date:&#032;</string>
+    <string name="first_reminder_date">First Reminder Date</string>
+    <string name="first_practice_date">First Practice Date</string>
+    <string name="next_practice_date">Next Practice Date:&#032;</string>
+    <string name="mark_practice">Mark</string>
+    <string name="finished">Finished</string>
+    <string name="finish">Finish</string>
+    <string name="add">Add</string>
+    <string name="add_to_notification">Add to Notification</string>
+    <string name="remove_from_notification">Remove from Notification</string>
+    <string name="practice_date">Practice Date:&#032;</string>
+    <string name="marked">&#032;Marked</string>
+    <string name="delete_prompt_no_reverse">Sure to delete? This could not be reversed.</string>
+    <string name="mark_history">Mark History</string>
+</resources>

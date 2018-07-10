@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <org.zx_xjr.timemanagement.TimePickerPreference
+        android:key="@string/reminder_time"
+        android:title="@string/reminder_time"
+        android:dialogTitle=""
+        android:persistent="true"/>
+
+    <EditTextPreference
+        android:key="@string/entry_label"
+        android:title="@string/entry_label"/>
+
+    <MultiSelectListPreference
+        android:key="@string/bind_events"
+        android:title="@string/bind_events"/>
+
+    <PreferenceCategory
+        android:title="@string/entry_interval">
+        <org.zx_xjr.timemanagement.DatePickerPreference
+            android:key="@string/first_reminder_date"
+            android:title="@string/first_reminder_date"
+            android:persistent="true"
+            android:dialogTitle=""/>
+        <EditTextPreference
+            android:key="@string/entry_interval_value"
+            android:title="@string/entry_interval_value"
+            android:inputType="number"/>
+        <ListPreference
+            android:key="@string/entry_interval_unit"
+            android:title="@string/entry_interval_unit"
+            android:entries="@array/interval_units"
+            android:entryValues="@array/interval_units"/>
+    </PreferenceCategory>
+</PreferenceScreen>

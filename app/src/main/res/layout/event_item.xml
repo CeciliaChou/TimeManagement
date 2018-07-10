@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="org.zx_xjr.timemanagement.MainActivity"
+    android:padding="@dimen/common_margin"
+
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight=".75"
+        android:paddingEnd="@dimen/common_margin"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/common_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/event_label"
+            android:textSize="@dimen/item_large"/>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:progress="120"
+            android:id="@+id/task_progress"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_medium"
+            android:id="@+id/event_desc"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".25"
+        android:layout_height="match_parent"
+        android:id="@+id/event_finish_part"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/check_finish"/>
+    </LinearLayout>
+</LinearLayout>
